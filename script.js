@@ -3,11 +3,8 @@ let container = document.querySelector(".container")
 for(let i = 1 ; i <= 256 ; i++){
     let div  = document.createElement("div")
     div.textContent = i;
-    container.appendChild(div)
-    
+    container.appendChild(div)   
 }
-
-let button = document.querySelector("#button")
 
 function changeGrid(){
     let gridNumber = prompt("enter number between 1 and 100")
@@ -25,15 +22,20 @@ function changeGrid(){
                 width: calc(100vw/${gridNumber});
                 height: calc(100vw/${gridNumber});
                 flex: 0 0 calc(100vw/${gridNumber}) ;
+                
             `
-           
-            container.appendChild(div)
-            
+            div.style.opacity = 0.1
+            div.addEventListener("mouseover", ()=>{
+            div.style.cssText = `background-color:rgb(${parseInt(Math.random()*255)},${parseInt(Math.random()*255)},${parseInt(Math.random()*255)});
+                 width: calc(100vw/${gridNumber});
+                height: calc(100vw/${gridNumber});
+                flex: 0 0 calc(100vw/${gridNumber}) ;`
+
+           } )
+            container.appendChild(div)           
         }
-
-
-
     }
-
 }
+
+let button = document.querySelector("#button")
 button.addEventListener("click", changeGrid)
