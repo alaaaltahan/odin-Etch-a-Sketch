@@ -17,3 +17,7 @@
     border: 1.5px solid wheat;
     margin: 1px;
 }
+
+.container div:hover{
+    background-color: blue;
+}
