@@ -10,7 +10,7 @@
 }
 
 .container div {
-    width: 250px;
+    width: calc(100vw/16);
     height: calc(100vw/16);
     flex: 0 0 calc(100vw/16) ;
     background-color: green;
