@@ -15,4 +15,5 @@
     flex: 0 0 calc(100vw/16) ;
     background-color: green;
     border: 1.5px solid wheat;
+    margin: 1px;
 }
