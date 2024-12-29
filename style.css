@@ -10,12 +10,13 @@
 }
 
 .container div {
-    width: calc(100vw/16);
-    height: calc(100vw/16);
-    flex: 0 0 calc(100vw/16) ;
+    
+    width: calc(100vw/16 -2.5px);
+    height: calc(100vw/16 - 2.5px);
+    flex: 0 0 calc(100vw/16 - 2.5px) ;
     background-color: green;
-    border: 1.5px solid wheat;
-    margin: 1px;
+
+
 }
 
 .container div:hover{
